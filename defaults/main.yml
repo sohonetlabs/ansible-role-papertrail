@@ -1,5 +1,5 @@
 ---
-papertrail_version: "0.20"
+papertrail_version: "0.21"
 
 papertrail_service_enabled: true
 
