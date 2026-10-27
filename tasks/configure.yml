@@ -9,7 +9,7 @@
     backup: "{{ papertrail_managed_conf_file_backup }}"
     force: true
   notify: restart papertrail
-  when: papertrail_managed_conf_file and (papertrail_destination_host | length > 0)
+  when: papertrail_managed_conf_file and papertrail_destination_host | length
 
 - name: Configure Papertrail service
   service:
